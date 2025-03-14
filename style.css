@@ -131,13 +131,14 @@ section {
     opacity: 0.7;
 }
 .info-box p span {
-    background: none; /* Remove the gradient background */
-    color: white; /* Set the text color to white */
+    background: none; 
+    color: white; 
 }
 
 .btn-box {
     display: flex;
     gap: 1em;
+    justify-content: center;
 }
 
 .btn-box .btn:nth-of-type(2) {
@@ -200,8 +201,8 @@ section {
 
 .skills ul {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Create 2 columns */
-    gap: 1em; /* Adjust the gap between items as needed */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1em; 
     font-size: 1.3em;
     font-weight: 500;
     color: white;
@@ -311,7 +312,7 @@ footer{
     justify-content: center;
     gap: 10em;
     bottom: 0;
-    background-color: var(--background);
+    background-color: var(--second-background);
     width: 100%;
     padding: 5em 15%;
 }
@@ -342,17 +343,22 @@ footer{
     font-size: 1.3em ;
 }
 .col-right .social-icons{
+    color: linear-gradient(45deg, #800000, #6f4f37, #3d3d3d);
     display: flex;
     align-items: baseline;
     justify-content: left;
     gap: 1em;
 }
-.social-icons i{
-    font-size: 2em;
+.social-icons i {
+    font-size: 5em;
+    background: linear-gradient(45deg, #800000, #6f4f37, #3d3d3d);
+    -webkit-background-clip: text;
+    color: transparent;
     transition: 0.2s ease-in-out;
     cursor: pointer;
 }
-.social-icons i:hover{
+
+.social-icons i:hover {
     color: white;
 }
 
@@ -451,4 +457,88 @@ footer{
 
 
 
+/* Add styling for the projects section */
+#projects {
+    padding: 50px 0;
+}
 
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box {
+    background: var(--background);
+    padding: 20px;
+    margin: 20px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.box p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+#certifications {
+    padding: 50px 0;
+    background: var(--second-background);
+}
+
+
+
+.certifications ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.certification-item {
+    background-color: rgba(35, 30, 30, 0.473);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.certification-item:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.certification-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.certification-info span {
+    font-weight: bold;
+    color: #878787;
+    font-size: 1.2rem;
+}
+
+.certification-info p {
+    font-size: 1rem;
+    color: #777575;
+    margin-top: 5px;
+}
+
+.certification-item i {
+    background: linear-gradient(45deg, #800000, #6f4f37, #3d3d3d);
+    background-clip: text;
+    color: transparent;
+}
