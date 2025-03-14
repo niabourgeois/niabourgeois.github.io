@@ -189,7 +189,7 @@ section {
 }
 
 .about-box p {
-    color: white;
+    color: #878787;
     opacity: 0.8;
 }
 
@@ -205,7 +205,7 @@ section {
     gap: 1em; 
     font-size: 1.3em;
     font-weight: 500;
-    color: white;
+    color: #878787;
     opacity: 0.8;
 }
 
