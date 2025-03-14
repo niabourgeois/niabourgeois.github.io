@@ -312,7 +312,7 @@ footer{
     justify-content: center;
     gap: 10em;
     bottom: 0;
-    background-color: var(--second-background);
+    background-color: var(--background);
     width: 100%;
     padding: 5em 15%;
 }
